@@ -3,14 +3,14 @@
 	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
 	"http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
-	
-	<!-- 设置系统参数 -->
-	<constant name="struts.devMode" value="true"/>
-	<constant name="struts.ui.theme" value="simple"/>
 
-	<!-- 员工信息Action -->
+	<!-- 设置系统参数 -->
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.ui.theme" value="simple" />
+
 	<package name="test" extends="json-default">
 		<global-allowed-methods>regex:.*</global-allowed-methods>
+		<!-- 员工信息Action -->
 		<action name="empAction_*" method="{1}" class="empAction">
 			<result name="success" type="json">
 				<param name="includeProperties">deptlist.*</param>
@@ -18,8 +18,10 @@
 			<result name="addEmp" type="redirect">/addEmp.jsp?msg=${msg}</result>
 			<result name="emplist">/empList.jsp</result>
 			<result name="toupdateEmp">/updateEmp.jsp</result>
-			<result name="updateEmp" type="redirectAction">empAction_selectAllEmp?msg=${msg}</result>
-			<result name="deleteEmp" type="redirectAction">empAction_selectAllEmp?msg=${msg}</result>
+			<result name="updateEmp" type="redirectAction">empAction_selectAllEmp?msg=${msg}
+			</result>
+			<result name="deleteEmp" type="redirectAction">empAction_selectAllEmp?msg=${msg}
+			</result>
 		</action>
 		<!-- 部门信息Action -->
 		<action name="deptAction_*" method="{1}" class="deptAction">
