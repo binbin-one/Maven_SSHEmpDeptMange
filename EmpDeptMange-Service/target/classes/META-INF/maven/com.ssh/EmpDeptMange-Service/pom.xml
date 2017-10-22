@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ssh</groupId>
+		<artifactId>Maven_SSHEmpDeptMange</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>EmpDeptMange-Service</artifactId>
+
+	<dependencies>
+		<!-- Junit依赖 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- Spring 核心依赖 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+		<!-- Spring web依赖 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+		<!-- AspectJ依赖 -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+		</dependency>
+		
+		<!-- 依赖EmpDeptMange-Dao -->
+		<dependency>
+			<groupId>com.ssh</groupId>
+			<artifactId>EmpDeptMange-Dao</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- 依赖EmpDeptMange.Connversion -->
+		<dependency>
+			<groupId>com.ssh</groupId>
+			<artifactId>EmpDeptMange-Conversion</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+</project>

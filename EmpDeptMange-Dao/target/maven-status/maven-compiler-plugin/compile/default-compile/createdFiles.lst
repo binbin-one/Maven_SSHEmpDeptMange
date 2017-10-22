@@ -1,0 +1,5 @@
+com\ssh\dao\IEmpDao.class
+com\ssh\dao\IDeptDao.class
+com\ssh\dao\impl\BaseDao.class
+com\ssh\dao\impl\DeptDaoImpl.class
+com\ssh\dao\impl\EmpDaoImpl.class
