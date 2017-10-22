@@ -5,7 +5,6 @@
 	<artifactId>Maven_SSHEmpDeptMange</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	
 	<modules>
 		<module>EmpDeptMange-Dao</module>
 		<module>EmpDeptMange-Entity</module>
