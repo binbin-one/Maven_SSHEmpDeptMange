@@ -65,7 +65,7 @@
 		<!-- 依赖EmpDeptMange-Conversion -->
 		<dependency>
 			<groupId>com.ssh</groupId>
-			<artifactId>EmpDeptMange-Conversion</artifactId>
+			<artifactId>EmpDeptMange-Util</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
